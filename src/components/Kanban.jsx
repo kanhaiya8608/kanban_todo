@@ -9,8 +9,12 @@ const KanbanContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-`;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 const Kanban = () => {
   const [sections, setSections] = useState(() => {
     const storedSections = localStorage.getItem('sections');

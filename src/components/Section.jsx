@@ -10,6 +10,12 @@ const TodoBox = styled.div`
   border: 1px solid #ddd;
   padding: 10px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: max-width; 
+    margin: 20px;
+    height: 400px;
+  }
 `;
 
 const Styledhr = styled.hr`
